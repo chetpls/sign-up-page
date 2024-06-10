@@ -1,0 +1,128 @@
+body{
+    margin: 0;
+    padding:0;
+    overflow:hidden;
+    font-family: "Nunito";
+}
+
+.container{
+    display: flex;
+    margin: 0;
+    padding:0;
+    background-color: #141414;
+    width:100%;
+    height:100vh;
+}
+
+.form-container {
+    flex: 0 0 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    color:#faebd7;
+    font-size: 24px;
+}
+
+.img-container {
+    flex: 0 0 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    
+}
+
+#sign-up-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#logo{
+    height:50px;    
+    border-radius: 10px;
+    width:50px;
+}
+
+.entry-area{
+    position:relative;
+    margin:20px 0;
+}
+
+.entry-area label{
+    position:absolute;
+    top:50%;
+    left:5px;
+    transform:translateY(-50%);
+    font-size:16px;
+    color:antiquewhite;
+    padding: 0 5px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.entry-area input{
+    width:320px;
+    height:40px;
+    font-size:16px;
+    color:antiquewhite;
+    padding: 0 10px;
+    background:transparent;
+    border: 1.2px solid antiquewhite;
+    outline:none;
+    border-radius: 5px;
+}
+
+.entry-area input:focus~label,
+.entry-area input:valid~label
+{
+    top:0;
+    font-size: 12px;
+    background-color: #141414;
+}
+
+.submit{
+    color:#141414;
+    background-color: antiquewhite;
+    border-radius: 16px;
+    width:100%;
+    height:100%;
+    padding:5px;
+    font-size: 16px;
+    border:none;
+    font-family: "Nunito";
+    font-weight: bold;
+}
+
+.terms{
+    width:320px;
+    margin: 20px 0;
+    text-align: center;
+    color:lightslategray;
+    font-size: 14px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.terms a{
+    color:antiquewhite;
+}
+
+
